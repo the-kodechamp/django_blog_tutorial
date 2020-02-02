@@ -1,0 +1,44 @@
+{% extends 'blog/base.html'%}
+{% block content %}
+
+<style>
+    .container{
+        padding-top: 15px;
+       }
+
+    #id_name{
+        width:100%
+        }
+
+    #id_message{
+        width:100%
+        }
+
+    #id_email{
+        width:100%
+        }
+</style>
+
+<div class="container">
+    <h2>Send Me a Message</h2>
+    <form action="" method="POST">
+        {% csrf_token %}
+
+        {% for hidden in form.hidden_fields %}
+        {{ hidden }}
+        {% endfor %}
+
+        {% for field in form.visible_fields %}
+        <div class="form-group">
+            {{ field.errors }}
+            <label>{{ field.label_tag }}</label>
+            <p>{{ field }}</p>
+        </div>
+        {% endfor %}
+        <button type="reset" class="btn btn-secondary">Reset</button>
+         <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+{% endblock content %}
