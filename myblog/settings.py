@@ -122,3 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
+SENDGRID_API_KEY = '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'
+SENDGRID_SANDBOX_MODE_IN_DEBUG=False
