@@ -17,6 +17,19 @@
             font-family: "Roboto", sans-serif;
             font-size: 17px;
             background-color: #fdfdfd;
+
+        }
+
+
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #3398E1;
+            color: white;
+            text-align: center;
         }
 
         .shadow {
@@ -37,6 +50,9 @@
             padding-top: 10px
         }
 
+
+
+
     </style>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow" id="mainNav">
@@ -54,6 +70,17 @@
                         <li class="nav-item text-black">
                             <a class="nav-link text-black font-weight-bold" href="#">Policy</a>
                         </li>
+
+                        {% if user.is_authenticated %}
+                         <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'logout' %}">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item text-black">
+                            <a class="nav-link text-black font-weight-bold" href="{% url 'signup' %}">Sign Up</a>
+                        </li>
+                        {% endif %}
+
                         <li class="nav-item text-black">
                             <a class="nav-link text-black font-weight-bold" href="{% url 'contact' %}">Contact</a>
                         </li>
@@ -69,7 +96,7 @@
 
 
 
-    <footer class="py-3 bg-grey">
+    <footer class="footer py-3 bg-grey">
         <p class="m-0 text-dark text-center">Copyright &copy; The Kodechamp</p>
     </footer>
 </body>

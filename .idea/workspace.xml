@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ee63ce6-85d9-4619-bbc6-97b7e77f4078" name="Default Changelist" comment="Initial Commit - Create a Blog with Django">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_blog.iml" afterDir="false" />
+    <list default="true" id="9ee63ce6-85d9-4619-bbc6-97b7e77f4078" name="Default Changelist" comment="Added Sendgrid Mail Integration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myblog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myblog/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -53,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -78,17 +82,50 @@
       <option name="presentableId" value="Default" />
       <updated>1577387398547</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Sendgrid Mail Integration">
+      <created>1580679096135</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580679096135</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added Sendgrid Mail Integration">
+      <created>1580679244000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580679244000</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit - Create a Blog with Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit - Create a Blog with Django" />
+    <MESSAGE value="Added Sendgrid Mail Integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sendgrid Mail Integration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="112" key="CommitChangelistDialog2" timestamp="1580675533144">
+    <state x="681" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581335986997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="604" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580675533144" />
+    <state x="681" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581335986997" />
+    <state x="604" y="112" key="CommitChangelistDialog2" timestamp="1581453685050">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="604" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581453685050" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1577480390064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -97,17 +134,21 @@
     </state>
     <state x="540" y="12" key="FileChooserDialogImpl.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1579491644881" />
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577480390064" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1577480351877">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1581423515467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="SettingsEditor.inPresentationMode" timestamp="1579491653837">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" key="SettingsEditor.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1579491653837" />
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1577480351877" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1577479842462">
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581423515467" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1581453658096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577479842462" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581453658096" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580679274513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580679274513" />
   </component>
 </project>

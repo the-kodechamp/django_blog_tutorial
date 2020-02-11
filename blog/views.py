@@ -1,10 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from .models import Post
 
 from .forms import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
+
+from django.contrib.auth import authenticate, login
+from .forms import UserCreateForm
 
 
 class PostList(generic.ListView):
@@ -33,3 +36,17 @@ def contact_form(request):
             return HttpResponse('Success...Your email has been sent')
     return render(request, 'blog/contact.html', {'form': form})
 
+
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreateForm(request.POST)
+        if form.is_valid():
+            new_user = form.save()
+            new_user = authenticate(username=form.cleaned_data['username'],
+                                    password=form.cleaned_data['password1'],
+                                    )
+            login(request, new_user)
+            return redirect('home')
+    else:
+        form = UserCreateForm()
+    return render(request, 'registration/signup.html', {'form': form})
