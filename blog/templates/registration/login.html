@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Login</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="form-group">
+            {{ field.errors }}
+            <label>{{ field.label_tag }}</label>
+            <p>{{ field }}</p>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+    </form>
+    <div>
+        <a href="{% url 'signup' %}">Not a Member...Sign up</a>
+
+    </div>
+    <div>
+        <a href="{% url 'password_reset' %}">Forgot Password</a>
+    </div>
+</div>
+
+
+{% endblock %}
