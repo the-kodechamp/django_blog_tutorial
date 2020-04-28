@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ee63ce6-85d9-4619-bbc6-97b7e77f4078" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9ee63ce6-85d9-4619-bbc6-97b7e77f4078" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584204508012</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Signup, Login and Password Reset Folder">
+      <created>1588102672574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588102672574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,17 +133,18 @@
     <MESSAGE value="Initial Commit - Create a Blog with Django" />
     <MESSAGE value="Added Sendgrid Mail Integration" />
     <MESSAGE value="Added Signup, Login and Password Reset" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Signup, Login and Password Reset" />
+    <MESSAGE value="Added Signup, Login and Password Reset Folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Signup, Login and Password Reset Folder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="681" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581335986997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581335986997" />
-    <state x="604" y="112" key="CommitChangelistDialog2" timestamp="1584204507519">
+    <state x="604" y="112" width="852" height="811" key="CommitChangelistDialog2" timestamp="1588102672000">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="604" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1584204507519" />
+    <state x="604" y="112" width="852" height="811" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588102672000" />
     <state x="540" y="12" key="FileChooserDialogImpl.inPresentationMode" timestamp="1579491644881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -151,10 +157,10 @@
     </state>
     <state x="0" y="0" key="SettingsEditor.inPresentationMode/0.0.1920.1040@0.0.1920.1040" timestamp="1579491653837" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1581423515467" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1584204532076">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588102706627">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1584204532076" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588102706627" />
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588102474841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
